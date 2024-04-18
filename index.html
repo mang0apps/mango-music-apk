@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MangoMusic APK Download</title>
+  <link rel="icon" type="image/x-icon" href="./public/icon.png">
+  <meta property="og:url" content="https://mang0apps.github.io/mango-music-apk/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MangoMusic APK" />
+  <meta property="og:description" content="Download, add playlist, and play background music all free" />
+  <meta property="og:image" content="https://mang0apps.github.io/mango-music-apk/public/icon.png" />
+</head>
+<body style="background-color: black;color: white; display: flex; flex-direction: column; align-items: center; margin: 0;font-family: Verdana, Geneva, Tahoma, sans-serif; padding-block: 30px">
+  <img src="./public/icon.png" alt="Mango music logo" width="300" height="300">
+  <small style="color: gray;margin-bottom: 10px;">Download, add playlist, and play background music</small>
+  <h1 style="margin-bottom: 5px;">APK v<span id="version"></span></h1>
+  <a href="https://drive.usercontent.google.com/download?id=19vNn8HKS0J6WTY8D44FefOlcQZparJpz&export=download&authuser=0" download style="color: white;margin-bottom: 20px;">Download</a>
+  <q style="max-width: 300px;text-align: center;margin-bottom: 20px;">If you like my work or the free stuff on this music app and want to say thanks, or encourage me to do more, you can buy me a coffee! <br>Contribute to my coffee fund with any amount you are comfortable to pay.
+    The coffee will give me the ‘kick’ to work even harder to empower creative entrepreneurs.
+    Thank you!</q>
+  <img src="./public/MangoMusic-QRcode.jpg" alt="Gcash QR code" style="max-width: 100svw;">
+  <a href="./public/MangoMusic-QRcode.jpg" download alt="Download QR Code" style="color: white;margin: 50px;">Download QR Code</a>
+  <script>
+    fetch('version.txt')
+      .then(res => res.text())
+      .then(data => {
+        document.querySelector('#version').textContent = data
+      })
+  </script>
+</body>
+</html>
